@@ -1,3 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
-
+body {
+  margin: 0;
+}
+nav {
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #1b1b1c;
+  position: fixed;
+}
+.header {
+  height: 600px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.middle {
+  height: 300px;
+  width: 100%;
+  background-color: #1b1b1c;
+}
+.showcase {
+  height: 600px;
+  width: 100%;
+  background-color:  #f9f9f9;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: #1b1b1c;
+}
