@@ -1,8 +1,7 @@
 @charset "utf-8";
 
-/* Import fonts from Typekit & Google Fonts */
+/* Import fonts from Typekit */
 @import url("https://use.typekit.net/pgg3zqi.css");
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
 
 /* Typography */
 body { font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1em; color: #093853; }
