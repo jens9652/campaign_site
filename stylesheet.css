@@ -95,3 +95,10 @@ header nav ul li a.active {
   width: 100%;
   height: 65vh;
 }
+/* VR-experiences text boks */
+.vr-left {
+  width: 61.8%;
+}
+.vr-right {
+  width: 38.2%;
+}
