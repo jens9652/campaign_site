@@ -31,6 +31,11 @@ img {
 }
 
 /* Header */
+.container.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
 header {
   background: #093853;
   position: fixed;
@@ -42,11 +47,11 @@ header {
 
 header .brand .logo {
   max-height: 3.2em;
-  padding-top: 0.4em;
 }
 
 header nav {
-  
+  font-family: 'Industry', sans-serif;
+  text-transform: uppercase;
 }
 
 header nav ul {
