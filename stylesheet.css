@@ -7,34 +7,53 @@
 body { font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1em; color: #093853; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Industry', sans-serif; font-weight: bold; }
 
-/* CSS Document */
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
-nav {
-  top: 0;
-  height: 50px;
+
+.container {
+  max-width: 1170px;
   width: 100%;
-  background-color: #1b1b1c;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Header */
+header {
+  background: #093853;
   position: fixed;
-}
-.header {
-  height: 600px;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: #f9f9f9;
 }
-.middle {
-  height: 300px;
-  width: 100%;
-  background-color: #1b1b1c;
+
+header .brand {
+  
 }
-.showcase {
-  height: 600px;
-  width: 100%;
-  background-color:  #f9f9f9;
+
+header nav {
+  
 }
-.footer {
-  height: 50px;
-  width: 100%;
-  background-color: #1b1b1c;
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+}
+
+header nav ul li a {
+  padding: 1em 1em;
+  border-bottom: 2px solid red;
 }
