@@ -120,7 +120,7 @@ header nav ul li a.active {
   width: 100%;
   position: relative;
   margin-top: 4em;
-  padding-top: 2em;
+  padding: 4em 0;
   margin-bottom: 10em;
 }
 
@@ -193,4 +193,32 @@ header nav ul li a.active {
 .projects .more-projects {
   flex: 2;
   margin: 1.6em;
+  font-size: 2.2em;
+  line-height: 1.1em;
+  text-align: right;
+}
+
+.projects .more-projects a {
+  font-family: 'Industry', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8D99AD;
+}
+
+.projects .more-projects .mo-pr {
+  font-weight: bold;
+  color: #093853;
+}
+
+.projects .more-projects .pr-pa {
+  color: #E75A7C;
+}
+
+/* VR-experiences text boks */
+.vr-left {
+  width: 61.8%;
+}
+.vr-right {
+  width: 38.2%;
 }
