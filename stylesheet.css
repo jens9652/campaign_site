@@ -18,12 +18,16 @@ body {
   margin: 0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 
 /* Header */
@@ -33,10 +37,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  float: left;
 }
 
-header .brand {
-  
+header .brand .logo {
+  max-height: 3.2em;
+  padding-top: 0.4em;
 }
 
 header nav {
@@ -54,6 +60,16 @@ header nav ul li {
 }
 
 header nav ul li a {
-  padding: 1em 1em;
-  border-bottom: 2px solid red;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 1.5em 1em;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px #8D99AD solid;
+}
+
+header nav ul li a.active {
+  border-bottom: 3px #E75A7C solid;
 }
