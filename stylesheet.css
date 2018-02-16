@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Industry', sans-serif; font-weight: bold;
 
 body {
   margin: 0;
+  margin-top: 20px;
 }
 
 .container {
@@ -36,11 +37,11 @@ header {
 }
 
 header .brand {
-  
+
 }
 
 header nav {
-  
+
 }
 
 header nav ul {
@@ -56,4 +57,8 @@ header nav ul li {
 header nav ul li a {
   padding: 1em 1em;
   border-bottom: 2px solid red;
+}
+.vr-experiences {
+  width: 100%;
+  display: flex;
 }
