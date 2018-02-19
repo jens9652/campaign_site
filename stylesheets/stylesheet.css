@@ -103,12 +103,28 @@ header {
 }
 
 header .brand .logo {
-  max-height: 3.2em;
+  width: 10em;
+  padding: 0.5em 0;
+  margin-left: 1em;
 }
 
 header nav {
   font-family: 'Industry', sans-serif;
   text-transform: uppercase;
+  margin-right: 1em;
+}
+
+header nav .mobile-button {
+  display: none;
+  border: 2px solid #E75A7C;
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Industry', sans-serif;
+  color: #E75A7C;
+  font-size: 0.9em;
 }
 
 header nav ul {
@@ -128,10 +144,7 @@ header nav ul li a {
 header nav ul li a:hover {
   border-bottom: 3px #8D99AD solid;
 }
-.vr-experiences {
-  width: 100%;
-  display: flex;
-}
+
 header nav ul li a.active {
   border-bottom: 3px #E75A7C solid;
 }
@@ -205,7 +218,7 @@ header nav ul li a.active {
 .projects .projects-header {
   width: 100%;
   position: absolute;
-  top: -1.1em;
+  top: -0.5em;
   text-align: center;
 }
 
@@ -296,12 +309,17 @@ header nav ul li a.active {
 
 /* VR-experiences text boks */
 .vr-experiences {
+  width: 100%;
+  display: flex;
   margin: 2em 1em;
 }
 
 .vr-left {
   padding-top: 2em;
   width: 55%;
+}
+.vr-left h2 {
+  line-height: 1.2em;
 }
 .vr-right {
   width: 45%;
@@ -349,7 +367,7 @@ header nav ul li a.active {
 .email_contact {
   margin-top: 4em;
 	background: #093853;
-  padding: 4em 25em;
+  padding: 4em 0;
 }
 .email_contact .email {
 	width: 80%;
@@ -429,10 +447,7 @@ footer nav .nav-section {
 }
 
 footer .contact {
-<<<<<<< HEAD
   width: 30%;
-}
-=======
   margin-top: 1.1em;
   flex: 3;
   font-size: 0.9em;
@@ -451,7 +466,29 @@ footer .contact .email {
   font-size: 1em;
   font-weight: 300;
 }
->>>>>>> 9da64db40a33460d2b25b95428c85290545e75e0
+
+/* Responsiveness */
+@media screen and (max-width: 760px) {
+  .container { padding: 0 1em; width: 100%; }
+  header nav ul { display: none;  }
+  header nav .mobile-button { display: block;  }
+  .hero .hero-text { text-align: center; width: 100%; left: 0; }
+  .vr-experiences .container { flex-direction: column-reverse; }
+  .vr-left, .vr-right { width: 100%; }
+  .vr-right img { padding: 0 6em; }
+  .vr-left h2 { text-align: center; font-size: 1.2em; }
+  .projects .container { flex-wrap: wrap; }
+  .projects .project { flex-basis: 100%; margin: 0.5em 1em; }
+  .projects .more-projects { text-align: center; margin: 0; font-size: 1.8em; margin-top: 1em; }
+  .blog .container { flex-wrap: wrap; }
+  .blog .blog-post { margin-bottom: 1em; }
+  .blog .blog-text { left: 0; width: 100%; text-align: center; }
+  footer .container { flex-wrap: wrap; }
+  footer .brand { flex-basis: 100%; text-align: center; }
+  footer .contact { flex-basis: 100%; text-align: center; }
+  footer nav .nav-section { text-align: center; }
+  footer nav { flex-basis: 100%; margin: 2em 0; }
+}
 
 .trailerfilm
 { align-items: center; display: flex;
