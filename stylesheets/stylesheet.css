@@ -491,6 +491,7 @@ footer .contact .email {
 }
 
 .trailerfilm
-{ align-items: center; display: flex;
+{ width: 80%;
+margin: 0 auto;
 
 }
