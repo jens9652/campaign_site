@@ -467,6 +467,42 @@ footer .contact .email {
   font-weight: 300;
 }
 
+.blog-post-single {
+  background: #F0F1EE;
+}
+
+.blog-post-single .article-header {
+  width: 100%;
+  text-align: center;
+  padding-top: 6em;
+}
+
+.blog-post-single .article-header h1 {
+  font-size: 2em;
+  margin: 0;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #E75A7C;
+}
+
+.blog-post-single .article-header .meta {
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.blog-post-single .content {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+
+.blog-post-single .content .lead {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 760px) {
   .container { padding: 0 1em; width: 100%; }
