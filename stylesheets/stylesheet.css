@@ -45,6 +45,7 @@ p {
   font-size: 0.9em;
   line-height: 1;
   border: 0;
+  cursor: pointer;
 }
 
 .btn-secondary {
