@@ -126,7 +126,6 @@ header nav ul li a:hover {
 }
 .vr-experiences {
   width: 100%;
-  padding: ;
   display: flex;
 }
 header nav ul li a.active {
@@ -358,8 +357,8 @@ header nav ul li a.active {
   margin-right: 1em;
 }
 .email_contact h4 {
-  color: #F0F1EE;
   margin: 0;
+  margin-bottom: 0.5em;
 }
 .email_contact .btn {
 	border: 0;
