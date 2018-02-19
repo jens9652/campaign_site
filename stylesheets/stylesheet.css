@@ -126,6 +126,7 @@ header nav ul li a:hover {
 }
 .vr-experiences {
   width: 100%;
+  padding: ;
   display: flex;
 }
 header nav ul li a.active {
@@ -215,7 +216,7 @@ header nav ul li a.active {
 .projects .project {
   flex: 1;
   background: green;
-  margin: 0.8em;
+  margin: 1em;
   position: relative;
   overflow: hidden;
 }
@@ -266,7 +267,8 @@ header nav ul li a.active {
 
 .projects .more-projects {
   flex: 2;
-  margin: 1.6em;
+  margin-top: 1.6em;
+  margin-right: 2em;
   font-size: 2.2em;
   line-height: 1.1em;
   text-align: right;
@@ -291,7 +293,7 @@ header nav ul li a.active {
 
 /* VR-experiences text boks */
 .vr-experiences {
-  margin: 2em 0;
+  margin: 2em 1em;
 }
 
 .vr-left {
