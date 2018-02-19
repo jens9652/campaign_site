@@ -367,17 +367,78 @@ header nav ul li a.active {
 	float: right;
 }
 
+footer {
+  margin: 3em 0;
+}
+
 footer .container {
 }
 
 footer .brand {
-  width: 40%;
+  flex: 4;
+}
+
+footer .brand img {
+  max-width: 18em;
+}
+
+footer .brand address {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  font-weight: 300;
+  font-family: 'Industry', sans-serif;
+  color: #99A3B6;
+  letter-spacing: 1px;
+}
+
+footer h4 {
+  margin: 0;
 }
 
 footer nav {
-  width: 30%;
+  margin-top: 1.1em;
+  flex: 4;
+  display: flex;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #E75A7C;
+}
+
+footer nav .nav-section {
+  flex: 1;
 }
 
 footer .contact {
-  width: 30%;
+  margin-top: 1.1em;
+  flex: 3;
+  font-size: 0.9em;
+}
+
+footer .contact .phone {
+  color: #8D99AE;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+footer .contact .email {
+  color: #E75A7C;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 300;
 }
