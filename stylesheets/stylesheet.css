@@ -231,7 +231,6 @@ header nav ul li a.active {
 
 .projects .project {
   flex: 1;
-  background: green;
   margin: 1em;
   position: relative;
   overflow: hidden;
@@ -348,6 +347,7 @@ header nav ul li a.active {
   font-size: 0.9em;
   font-weight: 300;
   padding: 0 1em;
+  min-width: 33.3%;
 }
 
 .blog .blog-post h3 {
