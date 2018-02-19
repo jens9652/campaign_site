@@ -42,11 +42,35 @@ p {
   line-height: 1;
 }
 
+.btn-secondary {
+  background: #8D99AD;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   display: flex;
+}
+
+.red-text {
+  color: #E75A7C;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
+.light-text {
+  font-weight: 300;
+}
+
+.bold-text {
+  font-weight: bold;
 }
 
 /* Header */
@@ -66,6 +90,7 @@ header.header-down {
 header {
   background: #093853;
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
@@ -112,6 +137,56 @@ header nav ul li a.active {
   background: #eeeeee;
   width: 100%;
   height: 65vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  background: rgba(9, 56, 83, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.hero .hero-text {
+  position: absolute;
+  z-index: 11;
+  color: #fff;
+  text-transform: uppercase;
+  left: 10%;
+  bottom: 20%;
+}
+
+.hero .hero-text h2 {
+  font-size: 3.5em;
+  margin: 0;
+  line-height: 1;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hero .hero-text h4 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.6em;
+}
+
+.hero .hero-text .btn {
+  margin-right: 0.75em;
+  font-size: 0.8em;
+}
+
+.hero-video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Projects */
@@ -216,9 +291,14 @@ header nav ul li a.active {
 }
 
 /* VR-experiences text boks */
+.vr-experiences {
+  margin: 2em 0;
+}
+
 .vr-left {
-  width: 61.8%;
+  padding-top: 2em;
+  width: 55%;
 }
 .vr-right {
-  width: 38.2%;
+  width: 45%;
 }
