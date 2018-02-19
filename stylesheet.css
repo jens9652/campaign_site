@@ -4,7 +4,7 @@
 @import url("https://use.typekit.net/pgg3zqi.css");
 
 /* Typography */
-body { font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1em; color: #093853; }
+body { font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1em; line-height: 1.35em; font-weight: 300; color: #093853; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Industry', sans-serif; font-weight: bold; }
 
 /* Global Styles */
@@ -196,7 +196,6 @@ header nav ul li a.active {
   position: relative;
   margin-top: 4em;
   padding: 4em 0;
-  margin-bottom: 10em;
 }
 
 .projects .projects-header {
@@ -301,4 +300,44 @@ header nav ul li a.active {
 }
 .vr-right {
   width: 45%;
+}
+
+.blog {
+  margin-top: 4em;
+}
+
+.blog .container {
+  position: relative;
+}
+
+.blog .blog-text {
+  font-size: 6em;
+  margin: 0;
+  line-height: 1;
+  color: #F0F1EE;
+  position: absolute;
+  z-index: -10;
+  top: -0.25em;
+  left: -0.5em;
+}
+
+.blog .blog-post {
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 0 1em;
+}
+
+.blog .blog-post h3 {
+  margin: 0;
+  border-bottom: 1px solid #093853;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.blog .blog-post .read-more {
+  font-weight: bold;
+  font-style: italic;
+  color: #E75A7C;
+  text-decoration: none;
+  text-transform: uppercase;
 }
