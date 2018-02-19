@@ -24,6 +24,12 @@ var utility = {
     var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 
     return height;
+  },
+
+  // Returns the user one step back in history
+  goBack: function() {
+    window.history.go(-1);
+    return false;
   }
 
 }

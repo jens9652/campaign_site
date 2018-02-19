@@ -44,6 +44,7 @@ p {
   font-weight: bold;
   font-size: 0.9em;
   line-height: 1;
+  border: 0;
 }
 
 .btn-secondary {
