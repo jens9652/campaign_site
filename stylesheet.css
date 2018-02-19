@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+/* Import fonts from Typekit */
+@import url("https://use.typekit.net/pgg3zqi.css");
+
+/* Typography */
+body { font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1em; line-height: 1.45em; font-weight: 300; color: #093853; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Industry', sans-serif; font-weight: bold; }
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 4em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background: #E75A7C;
+  color: #F0F1EE;
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-family: 'Industry', sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.btn-secondary {
+  background: #8D99AD;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.red-text {
+  color: #E75A7C;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
+.light-text {
+  font-weight: 300;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* Header */
+.container.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.header-up {
+  top: -150px;
+}
+
+header.header-down {
+  top: 0;
+}
+
+header {
+  background: #093853;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  float: left;
+  transition: top 0.4s ease-in-out;
+}
+
+header .brand .logo {
+  max-height: 3.2em;
+}
+
+header nav {
+  font-family: 'Industry', sans-serif;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 1.5em 1em;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px #8D99AD solid;
+}
+.vr-experiences {
+  width: 100%;
+  display: flex;
+}
+header nav ul li a.active {
+  border-bottom: 3px #E75A7C solid;
+}
+
+/* HERO COMPONENT */
+.hero {
+  background: #eeeeee;
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  background: rgba(9, 56, 83, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.hero .hero-text {
+  position: absolute;
+  z-index: 11;
+  color: #fff;
+  text-transform: uppercase;
+  left: 10%;
+  bottom: 20%;
+}
+
+.hero .hero-text h2 {
+  font-size: 3.5em;
+  margin: 0;
+  line-height: 1;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hero .hero-text h4 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.6em;
+}
+
+.hero .hero-text .btn {
+  margin-right: 0.75em;
+  font-size: 0.8em;
+}
+
+.hero-video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Projects */
+.projects {
+  background: #F0F1EE;
+  width: 100%;
+  position: relative;
+  margin-top: 4em;
+  padding: 4em 0;
+}
+
+.projects .projects-header {
+  width: 100%;
+  position: absolute;
+  top: -1.1em;
+  text-align: center;
+}
+
+.projects .projects-header h2 {
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  font-size: 2em;
+}
+
+.projects .project {
+  flex: 1;
+  background: green;
+  margin: 0.8em;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .project:hover > img {
+  transform: scale(1.05, 1.05);
+}
+
+.projects .project:hover > .overlay {
+  opacity: 1;
+}
+
+.projects .project img {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.projects .project .overlay {
+  position: absolute;
+  z-index: 10;
+  background: rgba(9, 56, 83, 0.6);
+  width: 100%;
+  height: 100%;
+  color: #F0F1EE;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+
+  transition: opacity 0.4s ease-in-out;
+}
+
+.projects .project .overlay .text {
+  vertical-align: center;
+  font-weight: 300;
+}
+
+.projects .project .overlay h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.25em;
+}
+
+.projects .more-projects {
+  flex: 2;
+  margin: 1.6em;
+  font-size: 2.2em;
+  line-height: 1.1em;
+  text-align: right;
+}
+
+.projects .more-projects a {
+  font-family: 'Industry', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8D99AD;
+}
+
+.projects .more-projects .mo-pr {
+  font-weight: bold;
+  color: #093853;
+}
+
+.projects .more-projects .pr-pa {
+  color: #E75A7C;
+}
+
+/* VR-experiences text boks */
+.vr-experiences {
+  margin: 2em 0;
+}
+
+.vr-left {
+  padding-top: 2em;
+  width: 55%;
+}
+.vr-right {
+  width: 45%;
+}
+
+.blog {
+  margin-top: 4em;
+}
+
+.blog .container {
+  position: relative;
+}
+
+.blog .blog-text {
+  font-size: 6em;
+  margin: 0;
+  line-height: 1;
+  color: #F0F1EE;
+  position: absolute;
+  z-index: -10;
+  top: -0.25em;
+  left: -0.5em;
+}
+
+.blog .blog-post {
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 0 1em;
+}
+
+.blog .blog-post h3 {
+  margin: 0;
+  border-bottom: 1px solid #093853;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.blog .blog-post .read-more {
+  font-weight: bold;
+  font-style: italic;
+  color: #E75A7C;
+  text-decoration: none;
+  text-transform: uppercase;
+}
