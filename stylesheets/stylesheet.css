@@ -365,3 +365,18 @@ header nav ul li a.active {
 	display: inline-block;
 	float: right;
 }
+
+footer .container {
+}
+
+footer .brand {
+  width: 40%;
+}
+
+footer nav {
+  width: 30%;
+}
+
+footer .contact {
+  width: 30%;
+}
