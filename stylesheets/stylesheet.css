@@ -343,3 +343,25 @@ header nav ul li a.active {
   text-decoration: none;
   text-transform: uppercase;
 }
+.email_contact {
+	background: #093853;
+	margin: 2em 0;
+	
+}
+.email_contact .email {
+	width: 80%;
+	padding: 0.5em 1.25em;
+	display: inline-block;
+	border-radius: 0.4em;
+	font-size: 0.9em;
+	border: 0;
+}
+.input_container {
+	width: 70%;
+	margin: 0 20em;
+}
+.email_contact .btn {
+	border: 0;
+	display: inline-block;
+	float: right;
+}
