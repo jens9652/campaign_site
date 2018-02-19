@@ -349,7 +349,7 @@ header nav ul li a.active {
 }
 .email_contact .email {
 	width: 80%;
-	padding: 0.5em 1.25em;
+	padding: 1em 1.25em;
 	display: inline-block;
 	border-radius: 0.4em;
 	font-size: 0.9em;
@@ -359,9 +359,11 @@ header nav ul li a.active {
 .email_contact h4 {
   margin: 0;
   margin-bottom: 0.5em;
+  font-size: 1.2em;
 }
 .email_contact .btn {
 	border: 0;
+	padding: 1em 1.25em;
 	display: inline-block;
 	float: right;
 }
