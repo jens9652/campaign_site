@@ -267,7 +267,8 @@ header nav ul li a.active {
 
 .projects .more-projects {
   flex: 2;
-  margin: 1.6em;
+  margin-top: 1.6em;
+  margin-right: 2em;
   font-size: 2.2em;
   line-height: 1.1em;
   text-align: right;
