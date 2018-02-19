@@ -127,6 +127,7 @@ header nav .mobile-button {
   font-family: 'Industry', sans-serif;
   color: #E75A7C;
   font-size: 0.9em;
+  background: none;
 }
 
 header nav ul {
@@ -149,6 +150,39 @@ header nav ul li a:hover {
 
 header nav ul li a.active {
   border-bottom: 3px #E75A7C solid;
+}
+
+header .mobile-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid rgba(240, 241, 238, 0.3);
+  border-bottom: 1px solid rgba(240, 241, 238, 0.3);
+}
+
+header .mobile-navigation ul li {
+  margin: 0;
+  padding: 0.5em 0;
+  border-bottom: 1px solid rgba(240, 241, 238, 0.1);
+}
+
+header .mobile-navigation ul li:last-child {
+  border-bottom: 0;
+}
+
+header .mobile-navigation ul li a {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: 'Industry', sans-serif;
+  color: #F0F1EE;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .mobile-navigation ul li a.active {
+  color: #E75A7C;
 }
 
 /* HERO COMPONENT */
@@ -312,7 +346,7 @@ header nav ul li a.active {
 .vr-experiences {
   width: 100%;
   display: flex;
-  margin: 2em 1em;
+  margin: 2em 0;
 }
 
 .vr-left {

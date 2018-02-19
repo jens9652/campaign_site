@@ -93,3 +93,26 @@ var header = {
 
 // Initialize Module
 header.init();
+
+var responsiveNavigation = {
+  defaultNav: document.getElementById('navigation'),
+  mobileNavContainer: document.getElementById('mobile-navigation'),
+  open: false,
+  toggle: function () {
+    if (this.open) {
+      this.removeNav();
+    } else {
+      this.cloneNav();
+    }
+  },
+  cloneNav: function () {
+    var mobileNav = this.defaultNav.cloneNode(true);
+    mobileNav.removeAttribute('id');
+    this.mobileNavContainer.appendChild(mobileNav);
+    this.open = true;
+  },
+  removeNav: function () {
+    this.mobileNavContainer.removeChild(this.mobileNavContainer.childNodes[1])
+    this.open = false;
+  }
+}
