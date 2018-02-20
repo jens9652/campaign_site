@@ -94,6 +94,7 @@ var header = {
 // Initialize Module
 header.init();
 
+// Copies HTML from navigation and pastes it into a new navigation element for mobile.
 var responsiveNavigation = {
   defaultNav: document.getElementById('navigation'),
   mobileNavContainer: document.getElementById('mobile-navigation'),
@@ -112,7 +113,9 @@ var responsiveNavigation = {
     this.open = true;
   },
   removeNav: function () {
-    this.mobileNavContainer.removeChild(this.mobileNavContainer.childNodes[1])
+    for (var i = this.mobileNavContainer.childNodes.length - 1; i >= 0; i--) {
+      this.mobileNavContainer.removeChild(this.mobileNavContainer.childNodes[i])
+    }
     this.open = false;
   }
 }
