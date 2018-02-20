@@ -86,6 +86,7 @@ p {
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
+  margin-bottom: 1em;
 }
 .responsive-embed iframe {
   position: absolute;
@@ -369,8 +370,10 @@ header .mobile-navigation ul li a.active {
   padding-top: 2em;
   width: 55%;
 }
-.vr-left h2 {
-  line-height: 1.2em;
+.vr-left h1 {
+  font-size: 1.6em;
+  line-height: 1.3em;
+  margin-bottom: 0.25em;
 }
 .vr-right {
   width: 45%;
