@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Industry', sans-serif; font-weight: bold;
   text-align: center;
   font-size: 2em;
   line-height: 1.2em;
+  width: 100%;
 }
 
 body {
@@ -287,6 +288,7 @@ header .mobile-navigation ul li a.active {
   margin: 1em;
   position: relative;
   overflow: hidden;
+  max-width: 33.3%;
 }
 
 .projects .project:hover > img {
@@ -342,12 +344,20 @@ header .mobile-navigation ul li a.active {
   text-align: right;
 }
 
+.projects .more-projects .arrow {
+  position: absolute;
+  width: 2.6em;
+  right: -3.2em;
+  bottom: -1.8em;
+}
+
 .projects .more-projects a {
   font-family: 'Industry', Arial, Helvetica, sans-serif;
   font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
   color: #8D99AD;
+  position: relative;
 }
 
 .projects .more-projects .mo-pr {
@@ -567,6 +577,15 @@ footer .contact .email {
 .trailerfilm {
   width: 60%;
   margin: 0 auto;
+}
+
+.trailer .container {
+  flex-wrap: wrap;
+}
+
+.trailer .more-projects {
+  margin-right: 0;
+  margin-bottom: 1em;
 }
 
 /* Responsiveness */
