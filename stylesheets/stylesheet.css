@@ -541,7 +541,6 @@ footer .contact .email {
 
 /* Responsiveness */
 @media screen and (max-width: 760px) {
-  .container { padding: 0 1em; width: 100%; }
   header nav ul { display: none;  }
   header nav .mobile-button { display: block;  }
   .hero .hero-text { text-align: center; width: 100%; left: 0; }
@@ -560,6 +559,10 @@ footer .contact .email {
   footer .contact { flex-basis: 100%; text-align: center; }
   footer nav .nav-section { text-align: center; }
   footer nav { flex-basis: 100%; margin: 2em 0; }
+}
+
+@media screen and (max-width: 1180px) {
+  .container { padding: 0 1em; width: 100%; }
 }
 
 .trailerfilm
