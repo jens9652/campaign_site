@@ -115,8 +115,10 @@
   <footer>
     <div class="container">
       <div class="brand">
-        <img src="images/artifact-logo_b.svg" alt="Artifact Game Solutions">
-        <address>Stationsvej 69 - DK-5792 Årslev - Denmark</address>
+        <img itemprop="image" src="images/artifact-logo_b.svg" alt="Artifact Game Solutions">
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Stationsvej 69</span> - <span itemprop="postalCode">DK-5792</span> <span itemprop="addressLocality">Årslev</span> - <span itemprop="addressCountry">Denmark</span>
+        </address>
       </div>
       <nav>
         <div class="nav-section">
@@ -124,8 +126,8 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="index.html#mailbox">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#mailbox">Contact</a></li>
           </ul>
         </div>
         <div class="nav-section">
@@ -140,8 +142,9 @@
       </nav>
       <div class="contact">
         <h4>Contact</h4>
-        <span class="phone">(+45) 60 60 29 16</span>
-        <a class="email" href="mailto:kontakt@artifactgamesolutions.com">kontakt@artifactgamesolutions.com</a>
+        <span itemprop="name" class="company-legal">Artifact Game Solutions IVS</span>
+        <span itemprop="telephone" class="phone">(+45) 60 60 29 16</span>
+        <a itemprop="email" class="email" href="mailto:kontakt@artifactgamesolutions.com">kontakt@artifactgamesolutions.com</a>
       </div>
     </div>
   </footer>

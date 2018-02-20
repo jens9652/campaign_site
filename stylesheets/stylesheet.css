@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Industry', sans-serif; font-weight: bold;
 
 .subpage {
   text-align: center;
+  font-size: 2em;
+  line-height: 1.2em;
 }
 
 body {
@@ -77,6 +79,20 @@ p {
 
 .bold-text {
   font-weight: bold;
+}
+
+.responsive-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.responsive-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Header */
@@ -489,6 +505,12 @@ footer .contact {
   font-size: 0.9em;
 }
 
+footer .contact .company-legal {
+  display: block;
+  font-family: 'Industry', sans-serif;
+  font-style: italic;
+}
+
 footer .contact .phone {
   color: #8D99AE;
   font-size: 1.4em;
@@ -539,6 +561,11 @@ footer .contact .email {
   line-height: 1.4em;
 }
 
+.trailerfilm {
+  width: 60%;
+  margin: 0 auto;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 760px) {
   header nav ul { display: none;  }
@@ -563,10 +590,5 @@ footer .contact .email {
 
 @media screen and (max-width: 1180px) {
   .container { padding: 0 1em; width: 100%; }
-}
-
-.trailerfilm
-{ width: 80%;
-margin: 0 auto;
-
+  .trailerfilm { width: 90%; }
 }

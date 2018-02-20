@@ -9,7 +9,7 @@
     <link rel="icon" href="images/favicon.png" sizes="16x16 32x32" type="image/png">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/LocalBusiness">
 
   <header id="header">
     <div class="container header">
@@ -52,24 +52,26 @@
   <footer>
     <div class="container">
       <div class="brand">
-        <img src="../images/artifact-logo_b.svg" alt="Artifact Game Solutions">
-        <address>Stationsvej 69 - DK-5792 Årslev - Denmark</address>
+        <img itemprop="image" src="images/artifact-logo_b.svg" alt="Artifact Game Solutions">
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Stationsvej 69</span> - <span itemprop="postalCode">DK-5792</span> <span itemprop="addressLocality">Årslev</span> - <span itemprop="addressCountry">Denmark</span>
+        </address>
       </div>
       <nav>
         <div class="nav-section">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projectsite.html">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="index.html#mailbox">Contact</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../project.html">Projects</a></li>
+            <li><a href="../index.html#blog">Blog</a></li>
+            <li><a href="../index.html#mailbox">Contact</a></li>
           </ul>
         </div>
         <div class="nav-section">
           <h4>Social</h4>
           <ul>
             <li><a href="https://www.facebook.com/artifactgamesolutions/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.youtube.com/channel/UC4qiVzQclR59_wC_Cp-Ez3w"target="_blank">YouTube</a></li>
+            <li><a href="https://www.youtube.com/channel/UC4qiVzQclR59_wC_Cp-Ez3w" target="_blank">YouTube</a></li>
             <li><a href="https://www.linkedin.com/company/artifactgamesolutions/?originalSubdomain=dk"target="_blank">LinkedIn</a></li>
             <li><a href="https://www.instagram.com/artifactgamesolutions/" target="_blank">Instagram</a></li>
           </ul>
@@ -77,8 +79,9 @@
       </nav>
       <div class="contact">
         <h4>Contact</h4>
-        <span class="phone">(+45) 60 60 29 16</span>
-        <a class="email" href="mailto:kontakt@artifactgamesolutions.com">kontakt@artifactgamesolutions.com</a>
+        <span itemprop="name" class="company-legal">Artifact Game Solutions IVS</span>
+        <span itemprop="telephone" class="phone">(+45) 60 60 29 16</span>
+        <a itemprop="email" class="email" href="mailto:kontakt@artifactgamesolutions.com">kontakt@artifactgamesolutions.com</a>
       </div>
     </div>
   </footer>

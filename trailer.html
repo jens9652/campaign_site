@@ -30,20 +30,24 @@
   </header>
 
   <div class="projects">
-      <h2 class="uppercase-text light-text subpage"> Watch our trailer <br/><span class="red-text italic-text bold-text">Right below</span></h2>
- <div class="trailerfilm">
-        <iframe width="1080" height="480" src="https://www.youtube.com/embed/HFBDt6u11wU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
- </div>
-        <div class="more-projects">
-        <a href="project.html">Watch<br /> more of our <span class="mo-pr">projects</span><br /> right <span class="pr-pa">here</span></a>
+    <h2 class="uppercase-text light-text subpage"> Watch our trailer <br/><span class="red-text italic-text bold-text">Right below</span></h2>
+    <div class="trailerfilm">
+      <div class="responsive-embed">
+        <iframe src="https://www.youtube.com/embed/HFBDt6u11wU?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-  </div><!--div til projekter-->
+    <div class="more-projects">
+      <a href="project.html">Watch<br /> more of our <span class="mo-pr">projects</span><br /> right <span class="pr-pa">here</span></a>
+    </div>
+  </div>
+</div><!--div til projekter-->
   <footer>
     <div class="container">
       <div class="brand">
-        <img src="images/artifact-logo_b.svg" alt="Artifact Game Solutions">
-        <address>Stationsvej 69 - DK-5792 Årslev - Denmark</address>
+        <img itemprop="image" src="images/artifact-logo_b.svg" alt="Artifact Game Solutions">
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Stationsvej 69</span> - <span itemprop="postalCode">DK-5792</span> <span itemprop="addressLocality">Årslev</span> - <span itemprop="addressCountry">Denmark</span>
+        </address>
       </div>
       <nav>
         <div class="nav-section">
@@ -51,8 +55,8 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#mailbox">Contact</a></li>
           </ul>
         </div>
         <div class="nav-section">
@@ -67,8 +71,9 @@
       </nav>
       <div class="contact">
         <h4>Contact</h4>
-        <span class="phone">(+45) 60 60 29 16</span>
-        <a class="email" href="mailto:kontakt@artifactgamesolutions.com">kontakt@artifactgamesolutions.com</a>
+        <span itemprop="name" class="company-legal">Artifact Game Solutions IVS</span>
+        <span itemprop="telephone" class="phone">(+45) 60 60 29 16</span>
+        <a itemprop="email" class="email" href="mailto:kontakt@artifactgamesolutions.com">kontakt@artifactgamesolutions.com</a>
       </div>
     </div>
   </footer>
